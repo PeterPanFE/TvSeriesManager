@@ -27,11 +27,11 @@ const EpisodeDetails: React.FC<EpisodeDetailsProps> = ({ episode, onClose }) => 
   return (
     <div
       className="h-full"
-      onClick={onClose} // Close when clicking outside
+      onClick={onClose}
     >
       <div
         className="relative flex w-full h-full"
-        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+        onClick={(e) => e.stopPropagation()}
       >
         <img src={imageUrl} alt={episode.title} className="w-1/2 h-full object-cover" />
         <div className="w-1/2 p-10">
